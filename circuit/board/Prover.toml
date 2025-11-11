@@ -1,0 +1,73 @@
+commitment = "0"
+
+# Example config: 10x10, fleet [5,4,3,3,2], game_id=1, salt=123
+[cfg]
+width = "10"
+height = "10"
+fleet_count = "5"
+fleet_lens = ["5","4","3","3","2","0","0","0","0","0"]
+game_id = "1"
+salt = "123"
+
+# Example ships, order-aligned with fleet_lens, remaining zeroed
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "5"
+
+[[ships]]
+x = "2"
+y = "2"
+dir = "1"
+len = "4"
+
+[[ships]]
+x = "5"
+y = "5"
+dir = "0"
+len = "3"
+
+[[ships]]
+x = "7"
+y = "1"
+dir = "1"
+len = "3"
+
+[[ships]]
+x = "9"
+y = "7"
+dir = "1"
+len = "2"
+
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "0"
+
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "0"
+
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "0"
+
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "0"
+
+[[ships]]
+x = "0"
+y = "0"
+dir = "0"
+len = "0"
+
+

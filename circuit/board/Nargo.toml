@@ -1,0 +1,10 @@
+[package]
+name = "zk-battleship-board"
+type = "bin"
+authors = ["zk-battleship"]
+compiler_version = ">=0.30.0"
+
+[dependencies]
+zk-battleship-common = { path = "../common" }
+
+

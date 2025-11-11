@@ -1,0 +1,9 @@
+[package]
+name = "zk-battleship-common"
+type = "lib"
+authors = ["zk-battleship"]
+compiler_version = ">=0.30.0"
+
+[dependencies]
+
+
