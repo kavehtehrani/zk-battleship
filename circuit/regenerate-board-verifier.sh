@@ -4,10 +4,12 @@ cd "$(dirname "$0")"
 
 PKG=board
 echo "Building $PKG..."
-nargo compile --package zk_battleship_board
+cd board
+nargo compile
+cd ..
 
 echo "Writing verification key..."
-bb write_vk -b ./board/target/circuit.json -o ./board/target --oracle_hash keccak
+bb write_vk -b ./board/target/zk_battleship_board.json -o ./board/target --oracle_hash keccak
 
 OUT="../contracts/contracts/VerifierBoard.sol"
 echo "Generating Solidity verifier to $OUT ..."

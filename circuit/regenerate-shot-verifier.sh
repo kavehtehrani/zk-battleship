@@ -4,10 +4,12 @@ cd "$(dirname "$0")"
 
 PKG=shot
 echo "Building $PKG..."
-nargo compile --package zk_battleship_shot
+cd shot
+nargo compile
+cd ..
 
 echo "Writing verification key..."
-bb write_vk -b ./shot/target/circuit.json -o ./shot/target --oracle_hash keccak
+bb write_vk -b ./shot/target/zk_battleship_shot.json -o ./shot/target --oracle_hash keccak
 
 OUT="../contracts/contracts/VerifierShot.sol"
 echo "Generating Solidity verifier to $OUT ..."
