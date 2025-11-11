@@ -8,14 +8,12 @@ fn main(commitment: pub Field,
         cfg: Config) {
 	let cells = expand_cells(ships, cfg);
 	let c = commit_board(cells, cfg);
-	constrain c == commitment;
+	assert(c == commitment);
 
 	let ok = in_bounds(shot_x, shot_y, cfg.width, cfg.height);
-	constrain ok == 1;
+	assert(ok == 1);
 
 	let shot_idx = cell_index(shot_x, shot_y, cfg.width);
 	let computed = is_hit(cells, shot_idx);
-	constrain computed == hit;
+	assert(computed == hit);
 }
-
-

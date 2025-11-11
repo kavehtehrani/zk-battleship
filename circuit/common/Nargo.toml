@@ -1,9 +1,9 @@
 [package]
-name = "zk-battleship-common"
+name = "zk_battleship_common"
 type = "lib"
 authors = ["zk-battleship"]
-compiler_version = ">=0.30.0"
 
 [dependencies]
+poseidon = { tag = "v0.1.1", git = "https://github.com/noir-lang/poseidon" }
 
 

@@ -1,10 +1,10 @@
 [package]
-name = "zk-battleship-shot"
+name = "zk_battleship_shot"
 type = "bin"
 authors = ["zk-battleship"]
 compiler_version = ">=0.30.0"
 
 [dependencies]
-zk-battleship-common = { path = "../common" }
+zk_battleship_common = { path = "../common" }
 
 

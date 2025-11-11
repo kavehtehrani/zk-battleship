@@ -1,18 +1,30 @@
 {
-  "name": "zk-battleship-contracts",
-  "private": true,
+  "name": "contracts",
+  "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "build": "hardhat compile",
-    "deploy:local": "hardhat ignition deploy ./ignition/modules/Battleship.ts --network hardhat"
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.4",
-    "@nomicfoundation/hardhat-ignition": "^0.15.5",
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.2"
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.4",
+    "@nomicfoundation/hardhat-viem": "^3.0.1",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.3",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@solidstate/hardhat-contract-sizer": "^3.0.0",
+    "@types/node": "^24.10.0",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.15.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.7",
+    "hardhat": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
-
-

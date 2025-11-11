@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 
 PKG=board
 echo "Building $PKG..."
-nargo compile --package zk-battleship-board
+nargo compile --package zk_battleship_board
 
 echo "Writing verification key..."
 bb write_vk -b ./board/target/circuit.json -o ./board/target --oracle_hash keccak
